@@ -187,8 +187,124 @@ p {
     padding: 0.3rem 0.8rem;
 }
 
+.type_psychic {
+    background-color: darkorchid;
+    width: 20%;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0.3rem 0.8rem;
+}
+
+.type_dragon {
+    background: linear-gradient(180deg, blue, rgb(255, 60, 0));
+    width: 20%;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0.3rem 0.8rem;
+}
+
+.type_rock {
+    background-color: rgb(131, 71, 22);
+    width: 20%;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0.3rem 0.8rem;
+}
+
+.type_steel {
+    background-color: rgb(93, 95, 114);
+    width: 20%;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0.3rem 0.8rem;
+}
+
+.type_fighting {
+    background-color: rgb(199, 91, 19);
+    width: 20%;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0.3rem 0.8rem;
+}
+
+.type_ice {
+    background-color: rgb(0, 204, 255);
+    width: 20%;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0.3rem 0.8rem;
+}
+
+.type_ghost {
+    background-color: purple;
+    width: 20%;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0.3rem 0.8rem;
+}
+
+.type_dark {
+    background-color: black;
+    width: 20%;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0.3rem 0.8rem;
+}
+
+
 @media (max-width: 1400px) {
     .imgpoke {
         height: 200px;
     }
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+section input {
+    padding: 0.7rem;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-right: none;
+    border: 2px solid #d32f2f;
+    background-color: #ffebee;
+    width: 300px;
+    font-size: 1rem;
+    color: #b71c1c;
+}
+
+section input:focus {
+    outline: none;
+    border-color: #b71c1c;
+    background-color: #ffcdd2;
+}
+
+section button {
+    padding: 0.5rem;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-left: none;
+    border: 2px solid #d32f2f;
+    font-size: 1.3rem;
+    background-color: #d32f2f;
+    color: white;
+    cursor: pointer;
+}
+
+section button:hover {
+    background-color: #b71c1c;
+    border-color: #b71c1c;
 }

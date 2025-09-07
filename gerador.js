@@ -2,7 +2,7 @@ const saida = document.querySelector("#Infos-poke")
 const details = document.querySelector("#Poke-details")
 const btn_saida = document.createElement("button")
 
-for (let pokemon = 1; pokemon <= 54; pokemon++) {
+for (let pokemon = 1; pokemon <= 204; pokemon++) {
     fetch(`https://pokeapi.co/api/v2/pokemon-form/${pokemon}/`)
         .then(poke => poke.json())
         .then(dados => {
@@ -62,6 +62,31 @@ for (let pokemon = 1; pokemon <= 54; pokemon++) {
             if (dados.types[0].type.name === "flying") {
                 h3_type.classList.add("type_flying")
             }
+            if (dados.types[0].type.name === "psychic") {
+                h3_type.classList.add("type_psychic")
+            }
+            if (dados.types[0].type.name === "dragon") {
+                h3_type.classList.add("type_dragon")
+            }
+            if (dados.types[0].type.name === "rock") {
+                h3_type.classList.add("type_rock")
+            }
+            if (dados.types[0].type.name === "steel") {
+                h3_type.classList.add("type_steel")
+            }
+            if (dados.types[0].type.name === "fighting") {
+                h3_type.classList.add("type_fighting")
+            }
+            if (dados.types[0].type.name === "ice") {
+                h3_type.classList.add("type_ice")
+            }
+            if (dados.types[0].type.name === "ghost") {
+                h3_type.classList.add("type_ghost")
+            }
+            if (dados.types[0].type.name === "dark") {
+                h3_type.classList.add("type_dark")
+            }
+
 
             if (dados.types.length > 1) {
                 const element_types = document.createElement("div")
@@ -96,7 +121,30 @@ for (let pokemon = 1; pokemon <= 54; pokemon++) {
                 if (dados.types[1].type.name === "flying") {
                     h3_type1.classList.add("type_flying")
                 }
-
+                if (dados.types[1].type.name === "psychic") {
+                    h3_type1.classList.add("type_psychic")
+                }
+                if (dados.types[1].type.name === "dragon") {
+                    h3_type1.classList.add("type_dragon")
+                }
+                if (dados.types[1].type.name === "rock") {
+                    h3_type1.classList.add("type_rock")
+                }
+                if (dados.types[1].type.name === "steel") {
+                    h3_type1.classList.add("type_steel")
+                }
+                if (dados.types[1].type.name === "fighting") {
+                    h3_type1.classList.add("type_fighting")
+                }
+                if (dados.types[1].type.name === "ice") {
+                    h3_type1.classList.add("type_ice")
+                }
+                if (dados.types[1].type.name === "ghost") {
+                    h3_type1.classList.add("type_ghost")
+                }
+                if (dados.types[1].type.name === "dark") {
+                    h3_type1.classList.add("type_dark")
+                }
 
                 h3_type.textContent = dados.types[0].type.name
                 h3_type1.textContent = dados.types[1].type.name
