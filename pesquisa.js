@@ -130,6 +130,9 @@ buscar.addEventListener("click", function () {
                     if (poke.types[1].type.name === "psychic") {
                         h3_type1.classList.add("type_psychic")
                     }
+                    if (poke.types[1].type.name === "dragon") {
+                        h3_type1.classList.add("type_dragon")
+                    }
                     if (poke.types[1].type.name === "rock") {
                         h3_type1.classList.add("type_rock")
                     }
